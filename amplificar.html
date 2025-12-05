@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amplificar</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&family=Bangers&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body class="amplificar-page">
+<header class="toolbar">
+  <a href="index.html">Inicio</a>
+  <button id="resetAll">Reset</button>
+</header>
+
+<main class="panel">
+  <section class="zone zone-1">
+    <h2>Amplificar</h2>
+    <div class="label">Mente colectiva</div>
+    <div class="mario-canvas" aria-label="Canvas de píxeles"></div>
+    <div class="mario-preview" aria-label="Mini guía"></div>
+    <div class="mario-palette" role="group" aria-label="Selector de colores">
+      <button class="swatch" data-color="#d32f2f" style="background:#d32f2f" title="Rojo"></button>
+      <button class="swatch" data-color="#1976d2" style="background:#1976d2" title="Azul"></button>
+      <button class="swatch" data-color="#f5c2a7" style="background:#f5c2a7" title="Piel"></button>
+      <button class="swatch" data-color="#6d4c41" style="background:#6d4c41" title="Marrón"></button>
+      <button class="swatch" data-color="#ffd54f" style="background:#ffd54f" title="Amarillo"></button>
+      <button class="swatch erase" data-erase="true" title="Borrar"></button>
+    </div>
+    <div class="lan">
+      <div class="lan-row">
+        <button id="lanHostBtn">Crear sala</button>
+        <button id="lanJoinBtn">Unirse</button>
+      </div>
+      <div id="lanHostPanel" class="lan-panel hidden">
+        <div class="lan-title">Código para compartir</div>
+        <textarea id="lanHostCode" readonly></textarea>
+        <div class="lan-row">
+          <button id="lanHostCopy">Copiar código</button>
+        </div>
+        <div class="lan-title">Pega la respuesta del invitado</div>
+        <textarea id="lanHostAnswer" placeholder="Pega aquí la respuesta"></textarea>
+        <div class="lan-hint">El código se copia automáticamente al portapapeles.</div>
+      </div>
+      <div id="lanJoinPanel" class="lan-panel hidden">
+        <div class="lan-title">Pega el código del host</div>
+        <textarea id="lanJoinOffer" placeholder="Pega aquí"></textarea>
+        <div class="lan-title">Código para enviar al host</div>
+        <textarea id="lanJoinAnswer" readonly></textarea>
+        <div class="lan-row">
+          <button id="lanJoinCopy">Copiar código</button>
+        </div>
+        <div class="lan-hint">El código se copia automáticamente al portapapeles.</div>
+      </div>
+      <div id="lanStatus" class="lan-status">LAN: Offline</div>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

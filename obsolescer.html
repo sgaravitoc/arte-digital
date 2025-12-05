@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Obsolescer</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&family=Bangers&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body class="obsolescer-page">
+<header class="toolbar">
+  <a href="index.html">Inicio</a>
+  <button id="toggleDerretir">Derretir</button>
+  <button id="resetAll">Reset</button>
+</header>
+
+<main class="panel">
+  <section class="zone zone-2">
+    <h2>Obsolescer</h2>
+    <div class="label">Museo evaporado</div>
+    <div class="museum">
+      <div class="fronton"></div>
+      <div class="col col-1"></div>
+      <div class="col col-2"></div>
+      <div class="col col-3"></div>
+      <div class="base"></div>
+    </div>
+    <figure class="artist-unique" aria-label="La idea del artista único">
+      <div class="portrait-frame"></div>
+      <svg class="portrait" viewBox="0 0 160 180" width="160" height="180" aria-hidden="true">
+        <defs>
+          <radialGradient id="spot" cx="50%" cy="0%" r="80%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <path d="M80 8 L144 72 L16 72 Z" fill="url(#spot)"/>
+        <circle cx="80" cy="50" r="20" fill="#cfd6de"/>
+        <path d="M48,116 C48,88 66,70 80,70 C94,70 112,88 112,116 L112,132 L48,132 Z" fill="#d9d9df"/>
+        <path d="M64 28 L72 18 L80 28 L88 18 L96 28 L96 32 L64 32 Z" fill="#ffd166" stroke="#b38b00" stroke-width="2"/>
+        <rect x="20" y="140" width="120" height="14" rx="6" fill="#aeb6c1"/>
+        <rect x="62" y="154" width="36" height="10" rx="4" fill="#bfc6cf"/>
+        <rect x="26" y="122" width="6" height="26" rx="3" fill="#cfd6de"/>
+        <rect x="128" y="122" width="6" height="26" rx="3" fill="#cfd6de"/>
+        <path d="M32 122 C64 106 96 106 134 122" stroke="#9aa6b2" stroke-width="4" fill="none"/>
+        <rect x="78" y="146" width="4" height="12" rx="2" fill="#6f7682"/>
+        <path d="M106 126 m -14 0 a 14 14 0 1 0 28 0 a 14 14 0 1 0 -28 0 M114 130 m -5 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0" fill="#d9d9df" fill-rule="evenodd"/>
+        <circle cx="100" cy="124" r="3" fill="#ff3d00"/>
+        <circle cx="108" cy="121" r="3" fill="#ef476f"/>
+        <circle cx="112" cy="128" r="3" fill="#ffd166"/>
+        <circle cx="96" cy="130" r="3" fill="#00d4ff"/>
+        <path d="M88 120 L124 142 L120 146 L84 124 Z" fill="#6d4c41" stroke="#9aa6b2" stroke-width="1"/>
+        <path d="M124 142 L132 140 L128 148 Z" fill="#ffd166" stroke="#b38b00" stroke-width="1"/>
+      </svg>
+      <figcaption class="artist-caption">La idea del artista único</figcaption>
+    </figure>
+    <div class="pixel-grid"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
